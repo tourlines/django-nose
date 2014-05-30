@@ -20,8 +20,12 @@ from django.core.management.color import no_style
 from django.core.management.commands.loaddata import Command
 from django.db import connections, transaction, DEFAULT_DB_ALIAS, models
 from django.db.backends.creation import BaseDatabaseCreation
-from django.test.simple import DjangoTestSuiteRunner
 from django.utils.importlib import import_module
+try:
+    from django.test.simple import DjangoTestSuiteRunner
+except ImportError:
+    # Django 1.6
+    from django.test.runner import DiscoverRunner as DjangoTestSuiteRunner
 
 import nose.core
 
