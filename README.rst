@@ -2,8 +2,8 @@
 django-nose
 ===========
 
-.. image:: https://travis-ci.org/jbalogh/django-nose.png
-  :target: https://travis-ci.org/jbalogh/django-nose
+.. image:: https://travis-ci.org/tourlines/django-nose.png
+  :target: https://travis-ci.org/tourlines/django-nose
 
 Features
 --------
